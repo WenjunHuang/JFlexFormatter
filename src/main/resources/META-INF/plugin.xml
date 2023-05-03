@@ -3,23 +3,20 @@
 
     <name>JFlexFormatter</name>
 
-    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="wenjun.huang80@gmail.com" url="https://github.com/WenjunHuang">WenjunHuang</vendor>
 
     <description><![CDATA[
-    Code formatter for jflex file.
+    This plugin provide a Code formatter for jflex source files.
     ]]></description>
 
-    <!-- Product and plugin compatibility requirements.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
     <dependencies>
         <plugin id="org.jetbrains.idea.grammar"/>
     </dependencies>
 
     <extensions defaultExtensionNs="com.intellij">
-        <codeStyleSettingsProvider implementation="com.github.wenjun.jflexformatter.formatter.JFlexCodeStyleSettingsProvider"/>
-        <langCodeStyleSettingsProvider implementation="com.github.wenjun.jflexformatter.formatter.JFlexLanguageCodeStyleSettingsProvider"/>
+<!--        <codeStyleSettingsProvider implementation="com.github.wenjun.jflexformatter.formatter.JFlexCodeStyleSettingsProvider"/>-->
+<!--        <langCodeStyleSettingsProvider implementation="com.github.wenjun.jflexformatter.formatter.JFlexLanguageCodeStyleSettingsProvider"/>-->
         <lang.formatter language="JFlex"
                         implementationClass="com.github.wenjun.jflexformatter.formatter.JFlexFormattingModelBuilder"/>
 
